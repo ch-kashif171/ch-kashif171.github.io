@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kashif - Portfolio</title>
+  <meta name="description" content="M. Kashif Sohail — Senior Software Engineer specialising in PHP / Laravel and AI/LLM (OpenAI &amp; Claude) integration. 8+ years, 29 production platforms shipped, author of the Larite PHP framework.">
+  <title>M. Kashif Sohail — Senior Laravel &amp; AI/LLM Engineer | Portfolio</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/avatar.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/profile-photo.jpg" type="image/jpeg">
 
   <!--
     - custom css link
@@ -41,19 +42,20 @@
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
-        <a href="./assets/images/avatar.jpg" class="avatar-icon" onclick="lightBoxPreview(true);" data-lightbox="roadtrip">
+        <a href="./assets/images/profile-photo.jpg" class="avatar-icon" onclick="lightBoxPreview(true);" data-lightbox="roadtrip">
           <figure class="avatar-box" style="border-radius: 50%;">
             <div class="project-item-icon-box avatar-box-icon" style="top: 40px;">
               <ion-icon name="eye-outline"></ion-icon>
             </div>
-            <img src="./assets/images/avatar.jpg" alt="M. Kashif Sohail" width="100">
+            <img src="./assets/images/profile-photo.jpg" alt="M. Kashif Sohail" width="100">
           </figure>
         </a>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">M. Kashif Sohail</h1>
+          <h1 class="name" title="M. Kashif Sohail">M. Kashif Sohail</h1>
 
-          <p class="title">Senior software developer</p>
+          <p class="title">Senior Software Engineer</p>
+          <div class="title-tag">PHP / Laravel &amp; AI‑LLM Specialist · 8+ Yrs</div>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -93,7 +95,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="tel:+92 315 7080729" class="contact-link">+92 315 7080729</a>
+              <a href="tel:+923157080729" class="contact-link">+92 315 7080729</a>
             </div>
 
           </li>
@@ -101,13 +103,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+              <p class="contact-title">Experience</p>
 
-              <time datetime="1982-06-23">October 13, 1989</time>
+              <span class="contact-link">8+ Years · 29 Platforms Shipped</span>
             </div>
 
           </li>
@@ -121,7 +123,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Lahore, Punjab, PAK</address>
+              <address>Wapda Town, Lahore, Pakistan</address>
             </div>
 
           </li>
@@ -132,21 +134,20 @@
 
         <ul class="social-list">
           <li class="social-item">
-            <a target="_blank" href="https://www.linkedin.com/in/m-kashif-sohail-ba3b8352/" class="social-link">
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/m-kashif-sohail-ba3b8352/" class="social-link" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
           <li class="social-item">
-            <a target="_blank" href="https://github.com/Ch-Kashif171" class="social-link">
+            <a target="_blank" rel="noopener" href="https://github.com/Ch-Kashif171" class="social-link" aria-label="GitHub">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
           <li class="social-item">
-            <a target="_blank href=" href="https://www.facebook.com/ch.k.sohail" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a target="_blank" rel="noopener" href="cv.pdf" class="social-link" aria-label="Download CV">
+              <ion-icon name="document-text-outline"></ion-icon>
             </a>
           </li>
-
         </ul>
 
       </div>
@@ -180,12 +181,15 @@
           <li class="navbar-item">
             <button class="navbar-link" id="portfolio" data-nav-link>Portfolio</button>
           </li>
+          <li class="navbar-item">
+            <button class="navbar-link" id="open-source" data-nav-link>Open Source</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" id="contact" data-nav-link>Contact</button>
+          </li>
 
           <li class="navbar-item">
-            <a target="_blank" href="cv.html" class="navbar-link" data-nav-link>CV</a>
-<!--            <a href="javascript:void(0);" onclick="previewCv();" class="navbar-link">CV</a>-->
-<!--            <a href="javascript:void(0);" onclick="closeCv();" id="close-cv" class="navbar-link close-cv" style="float: right; display: none;">Close CV</a>-->
-<!--            <embed style="display: none;" src="cv.pdf" id="cv-view" width="1200px" height="5300px" />-->
+            <a target="_blank" rel="noopener" href="cv.html" class="navbar-link" data-nav-link>CV</a>
           </li>
 
         </ul>
@@ -207,157 +211,120 @@
 
         <section class="about-text">
 
-          <p>As a Senior Software Developer with 8 years of experience in the field,
-            I bring a wealth of knowledge and expertise to every project I undertake.
-            My primary focus is on designing and implementing high-quality software
-            solutions that meet and exceed the needs of clients and end-users.
-            <br>
-            In my role, I have the following key responsibilities:
+          <p>
+            Senior <b>PHP / Laravel engineer</b> with <b>8+ years</b> shipping production web platforms across
+            e‑commerce, fintech, parking/mobility, real estate and government sectors — <b>29 platforms delivered</b>
+            for clients in Saudi Arabia, Kuwait, Switzerland &amp; Pakistan.
           </p>
-          <ul class="expertise">
-            <li>
-              <strong>Architecting Software Systems:</strong>
-              <br>
-              I take a vital role in architecting software systems, ensuring that they are scalable,
-              maintainable, and aligned with the organization's goals. This involves making
-              critical decisions about technology stack, design patterns, and overall system
-              structure.
-            </li>
-            <li>
-              <strong>Coding and Development: </strong>
-              <br>
-              I am actively involved in coding and development, setting the standard for clean,
-              efficient, and well-documented code. I work closely with my team to ensure
-              that best practices are followed, and I regularly conduct code reviews to
-              maintain code quality.
-            </li>
-            <li>
-              <strong>Problem Solving: </strong>
-              <br>
-              I am often called upon to tackle complex technical challenges and provide
-              innovative solutions. My experience and problem-solving skills allow me to
-              troubleshoot issues efficiently and optimize performance.
-            </li>
-
-            <li>
-              <strong>Optimization: </strong>
-              <br>
-              I always focus on optimization especially on the database side as
-              well as on the code level, to achieve high-end products with the best response
-              time and efficient behavior, to meet the end user's best experience without any
-              delay and lack of time.
-            </li>
-            <li>
-              <strong>Collaboration: </strong>
-              <br>
-              Collaboration is a cornerstone of my work.
-              I work closely with cross-functional teams, including product managers,
-              designers, and quality assurance professionals, to ensure that software
-              development aligns with project goals and requirements.
-            </li>
-
-            <li>
-              <strong>Code Versioning: </strong>
-              <br>
-              Also known as version control, is a critical aspect of software development that
-              helps developers track changes to their code, collaborate with others, and manage
-              project history. So I always adopt the best practice of code versioning to manage
-              team work to achieve the best productivity without any conflict.
-            </li>
-            <li>
-              <strong>Staying Current: </strong>
-              <br>
-              I make it a priority to stay up-to-date with the latest trends and technologies
-              in software development. This helps me recommend and implement improvements
-              to our development processes and tools.
-            </li>
-          </ul>
-          <br>
-
-          <strong>
-            Overall, my role as a Senior Software Developer is not only about writing code
-            but also about supporting my team, fostering innovation, and delivering software
-            solutions that make a positive impact on our clients' business objectives.
-            I am dedicated to staying at the forefront of technology and sharing my knowledge
-            to drive our team's success.
-          </strong>
-          <br>
-          <br>
-
-          <h2>My Expertise:</h2>
-          <hr>
-          <div style="margin-top:10px; width: 50%; float:left;">
-
-            <h3>Backend Technologies:</h3>
-          <ul class="expertise">
-              <li>Cor PHP.</li>
-              <li>Laravel.</li>
-              <li>CodeIgnitor.</li>
-              <li>Node.js.</li>
-              <li>AdonisJs.</li>
-              <li>ExpressJs.</li>
-            </ul>
-            <br>
-            <h3 >Frontend Technologies: </h3>
-            <ul class="expertise">
-              <li>VueJs.</li>
-              <li>NuxtJs.</li>
-              <li>AngularJs.</li>
-              <li>JavaScript.</li>
-              <li>jQuery.</li>
-              <li>Ajax.</li>
-              <li>JSON.</li>
-              <li>CSS.</li>
-            </ul>
-          </div>
-
-          <div style="margin-top:10px;width: 50%; float:right;">
-            <h3> Databases:</h3>
-            <ul class="expertise">
-              <li>Mysql.</li>
-              <li>PostgreSQL.</li>
-              <li>MongoDB.</li>
-              <li>Elasticsearch.</li>
-              <li>Algolia.</li>
-            </ul>
-            <br>
-            <h3>Tools:</h3>
-            <ul class="expertise">
-              <li>PhpStorm.</li>
-              <li>SublimeText.</li>
-              <li>Laragon.</li>
-              <li>GitHub.</li>
-              <li>Bitbucket.</li>
-              <li>Trello.</li>
-              <li>Jira.</li>
-              <li>Slack.</li>
-              <li>Teamwork.</li>
-            </ul>
-          </div>
+          <p>
+            I'm now focused on integrating <b>LLMs (OpenAI &amp; Claude)</b> into Laravel applications — building
+            AI‑powered SaaS features such as smart search, summarisation, workflow automation and chatbots. I'm also
+            the author of <b>Larite</b>, an open‑source PHP MVC framework, plus several Laravel packages published on
+            GitHub.
+          </p>
 
         </section>
+
+        <!-- stats -->
+        <section class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-number">8+</div>
+            <div class="stat-label">Years Exp.</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">29</div>
+            <div class="stat-label">Products Shipped</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">6</div>
+            <div class="stat-label">OSS Packages</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">19+</div>
+            <div class="stat-label">3rd‑Party APIs</div>
+          </div>
+        </section>
+
+        <!-- tech stack chips -->
+        <section style="margin-bottom: 30px;">
+          <h3 class="h3" style="margin-bottom: 15px; font-size: var(--fs-4); color: var(--white-2);">Core Tech Stack</h3>
+          <div class="chip-wrap">
+            <span class="chip">PHP 8</span>
+            <span class="chip">Laravel / Lumen</span>
+            <span class="chip">CodeIgniter</span>
+            <span class="chip">Livewire</span>
+            <span class="chip">Vue.js / Nuxt.js</span>
+            <span class="chip">Angular</span>
+            <span class="chip">Node.js / Express / AdonisJS</span>
+            <span class="chip">MySQL / MongoDB</span>
+            <span class="chip">RESTful APIs</span>
+            <span class="chip">AWS (EC2, S3, IAM)</span>
+            <span class="chip">Redis / Queues / Supervisor</span>
+            <span class="chip">Linux / Server Admin</span>
+            <span class="chip">Git / GitHub / Bitbucket</span>
+            <span class="chip chip-ai">OpenAI API</span>
+            <span class="chip chip-ai">Claude API</span>
+            <span class="chip chip-ai">Prompt Engineering</span>
+            <span class="chip chip-ai">AI Chatbots</span>
+          </div>
+        </section>
+
+        <!-- achievements -->
+        <section style="margin-bottom: 10px;">
+          <h3 class="h3" style="margin-bottom: 15px; font-size: var(--fs-4); color: var(--white-2);">Highlights</h3>
+          <div class="achievement-grid">
+            <div class="achievement-card">
+              <div class="icon-box"><ion-icon name="layers-outline"></ion-icon></div>
+              <p><strong>29 platforms shipped</strong> for clients in Saudi Arabia, Kuwait, Switzerland &amp; Pakistan — e‑commerce, mobility, government &amp; CMS.</p>
+            </div>
+            <div class="achievement-card">
+              <div class="icon-box"><ion-icon name="git-branch-outline"></ion-icon></div>
+              <p><strong>19+ integrations</strong> delivered: payment gateways, push/notification services &amp; social/geo APIs.</p>
+            </div>
+            <div class="achievement-card">
+              <div class="icon-box"><ion-icon name="cube-outline"></ion-icon></div>
+              <p><strong>6 open‑source packages</strong> authored and published, including the Larite PHP MVC framework.</p>
+            </div>
+            <div class="achievement-card">
+              <div class="icon-box"><ion-icon name="hardware-chip-outline"></ion-icon></div>
+              <p><strong>Early adopter</strong> of LLM‑powered features in production Laravel SaaS — OpenAI &amp; Claude.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- AI capabilities -->
+        <div class="ai-callout">
+          <div class="ai-callout-title"><ion-icon name="hardware-chip-outline"></ion-icon> AI Engineering Capabilities</div>
+          <ul>
+            <li>OpenAI &amp; Claude API integration into Laravel apps (chat, tools, streaming, function calling).</li>
+            <li>AI‑powered SaaS features: smart search, document summaries, semantic notifications, auto‑tagging.</li>
+            <li>Prompt engineering for reliable, production‑ready LLM output.</li>
+            <li>AI chatbot development with Laravel backends, session memory and moderation.</li>
+          </ul>
+        </div>
 
 
         <!--
           - service
         -->
 
-        <section class="service" style="float: left; margin-top: 20px">
+        <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing:</h3>
-          <ul class="service-list" style="margin-top: 10px;">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/web.png" alt="Web development icon" width="40">
+                <img src="./assets/images/web.png" alt="Backend development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Laravel &amp; PHP Backend</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Architecting and building scalable Laravel / PHP 8 backends, database schemas and multi‑tenant SaaS
+                  products used in production.
                 </p>
               </div>
 
@@ -366,15 +333,15 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="API icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Apis Development</h4>
+                <h4 class="h4 service-item-title">AI / LLM Integration</h4>
 
                 <p class="service-item-text">
-                  Rich experience to develop Restfull Apis for mobile apps as well as
-                  using with frontend js frameworks
+                  Integrating OpenAI &amp; Claude into Laravel apps to power smart search, summarisation, chatbots and
+                  workflow automation.
                 </p>
               </div>
 
@@ -383,15 +350,15 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-design.svg" alt="frontend icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Frontend Development</h4>
+                <h4 class="h4 service-item-title">RESTful API Design</h4>
 
                 <p class="service-item-text">
-                  Professional development of website in the latest frontend frameworks
-                  like Vuejs (Nuxt.js) and Angular.
+                  Designing and deploying REST APIs consumed by web &amp; mobile clients, with clean versioning and
+                  documentation.
                 </p>
               </div>
 
@@ -400,14 +367,15 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/ecommerce.png" alt="camera icon" width="40">
+                <img src="./assets/images/ecommerce.png" alt="ecommerce icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">E Commerce</h4>
+                <h4 class="h4 service-item-title">Full‑Stack Frontend</h4>
 
                 <p class="service-item-text">
-                  Professional experience to develop e-commerce websites with multi vendors.
+                  Shipping frontends in Vue.js / Nuxt.js, Angular and Livewire for e‑commerce, dashboards and
+                  customer portals.
                 </p>
               </div>
 
@@ -418,7 +386,7 @@
         </section>
 
 
-        <section class="testimonials" style="float: left; width: 100%;">
+        <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -435,9 +403,9 @@
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Kashif was hired as a software developer. We were very pleased with the work done. he has a
-                    lot of experience
-                    and is very concerned about the needs of client. He was really a hard worker and honest person.
+                    Kashif was hired as a software developer. We were very pleased with the work done — he brought a
+                    lot of experience and was genuinely concerned about the needs of the client. A hard worker and an
+                    honest person.
                   </p>
                 </div>
 
@@ -448,17 +416,16 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Red Signal" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-2.png" alt="RedSignal" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Red Signal</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>RedSignal</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    As a senior software developer, Kashif done his all responsibilities very efficiently and pasion.
-                    He really enjoys the work and very co-operative with other colleagues and juniors.
-                    He has the ability to lead the team and always takes responsibilities in a very
-                    positive way and always gives the best output.
+                    As a senior software developer, Kashif carried out his responsibilities very efficiently and with
+                    passion. He's cooperative with colleagues and juniors, able to lead the team, and always delivers
+                    the best output.
                   </p>
                 </div>
 
@@ -486,10 +453,10 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="./assets/images/avatar-1.png" alt="testimonial" width="80" data-modal-img>
               </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="RedSignal">
+              <img src="./assets/images/icon-quote.svg" alt="quote">
             </div>
 
             <div class="modal-content">
@@ -500,10 +467,8 @@
 
               <div data-modal-text>
                 <p>
-                  As a senior software developer, Kashif done his all responsibilities
-                  very efficiently and passion. He really enjoys the work and very co-operative
-                  with other colleagues and juniors. He has the ability to lead the team
-                  and always takes responsibilities in a very positive way and always gives
+                  As a senior software developer, Kashif carried out his responsibilities very efficiently and with
+                  passion. He's cooperative with colleagues and juniors, able to lead the team, and always delivers
                   the best output.
                 </p>
               </div>
@@ -513,57 +478,6 @@
           </section>
 
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <!--<section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>-->
 
       </article>
 
@@ -584,41 +498,31 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience & Work history</h3>
+            <h3 class="h3">Experience &amp; Work history</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Senior Software Engineer - May 2022 - Present</h4>
+              <h4 class="h4 timeline-item-title">Senior Software Engineer — May 2022 – Present</h4>
 
-              <span>Mawqiftech.  Kuwait (Remote) </span>
+              <span>Mawqiftech · Kuwait (Remote)</span>
 
               <ul class="expertise timeline-text">
                 <li>
-                  Maintain and fix the existing product.
+                  Maintain, fix and evolve a multi‑tenant car‑parking SaaS — build new modules, design DB structures
+                  and implement features against project specs.
                 </li>
                 <li>
-                  Create new modules within product.
+                  Design, build and deploy RESTful APIs consumed by web &amp; mobile clients.
                 </li>
                 <li>
-                  Implement code based on project specifications.
+                  Prototyping LLM‑assisted support flows and structured‑JSON automations for internal tooling.
                 </li>
                 <li>
-                  Create database structure.
-                </li>
-                <li>
-                  Working on Restful APIs.
-                </li>
-                <li>
-                  Giving a feedback to the development group to
-                </li>
-                <li>
-                  improve Agile Project management methods.
-                </li>
-                <li>
-                  Manage and deploy the code.
+                  Drive Agile practices — share feedback with the dev group to continuously improve process, plus
+                  code‑review culture, release management and deployments.
                 </li>
               </ul>
 
@@ -626,37 +530,16 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Senior Software Engineer - Feb 2020 – Apr 2022 </h4>
+              <h4 class="h4 timeline-item-title">Senior Software Engineer — Feb 2020 – Apr 2022</h4>
 
-              <span>RedSignal. Lahore (On-site)  </span>
+              <span>RedSignal · Lahore (On‑site)</span>
 
               <ul class="expertise timeline-text">
                 <li>
-                  Maintain and fix the existing projects.
+                  Delivered new Laravel products end‑to‑end plus Vue / Nuxt / Angular frontends.
                 </li>
                 <li>
-                  Develop new products.
-                </li>
-                <li>
-                  Implement code based on project specifications.
-                </li>
-                <li>
-                  Implement code based on project specifications.
-                </li>
-                <li>
-                  Work on databases.
-                </li>
-                <li>
-                  Working on Restful APIs.
-                </li>
-                <li>
-                  Working on frontend within js frameworks.
-                </li>
-                <li>
-                  Working on linux.
-                </li>
-                <li>
-                  Manage and deploy the code
+                  Optimised MySQL schemas and REST APIs; managed Linux deployments.
                 </li>
               </ul>
 
@@ -664,31 +547,13 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Senior Software Engineer - Jun 2019 – Jan 2020 </h4>
+              <h4 class="h4 timeline-item-title">Senior Software Engineer — Jun 2019 – Jan 2020</h4>
 
-              <span>Topdot. Lahore (On-site) </span>
+              <span>Topdot · Lahore (On‑site)</span>
 
               <ul class="expertise timeline-text">
                 <li>
-                  Working on Project estimates.
-                </li>
-                <li>
-                  Maintain and fix the existing projects.
-                </li>
-                <li>
-                  Develop new products.
-                </li>
-                <li>
-                  Working on linux.
-                </li>
-                <li>
-                  Work on databases.
-                </li>
-                <li>
-                  Working on Restful APIs.
-                </li>
-                <li>
-                  Manage and deploy the code.
+                  Project estimation, product development and Linux‑based deployments.
                 </li>
               </ul>
 
@@ -696,22 +561,13 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Software Engineer – Aug 2016 – May 2019</h4>
+              <h4 class="h4 timeline-item-title">Software Engineer — Aug 2016 – May 2019</h4>
 
-              <span>Elementary Logics. Lahore (On-site) </span>
+              <span>Elementary Logics · Lahore (On‑site)</span>
 
               <ul class="expertise timeline-text">
                 <li>
-                  Working on Project estimates.
-                </li>
-                <li>
-                  Maintain and fix the existing projects.
-                </li>
-                <li>
-                  Develop new products.
-                </li>
-                <li>
-                  Working on data analysis
+                  Built and maintained data‑driven web products; hands‑on data analysis.
                 </li>
               </ul>
 
@@ -726,7 +582,7 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Education</h3>
@@ -736,28 +592,21 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University of Education, Lahore</h4>
+              <h4 class="h4 timeline-item-title">BS (Hons) Information Technology</h4>
 
-              <span>2011 — 2015</span>
+              <span>University of Education, Lahore · 2018</span>
 
               <ul class="expertise timeline-text">
-                <li>BS(Hons) I.T</li>
-                <li>CGPA 3.05/4.00</li>
-
+                <li>CGPA 3.05 / 4.00</li>
               </ul>
 
             </li>
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">F.Sc — Pre‑Engineering</h4>
 
-              <h4 class="h4 timeline-item-title">The board of intermediate and Secondary education Bahawalpur</h4>
-
-              <span>2008 — 2010</span>
-
-              <ul class="expertise timeline-text">
-                <li>F.SC (Pre-Engineering)</li>
-              </ul>
+              <span>Board of Intermediate &amp; Secondary Education, Bahawalpur</span>
 
             </li>
 
@@ -775,12 +624,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Backend development</h5>
+                <h5 class="h5">Backend Development (Laravel / PHP 8)</h5>
                 <data value="100">100%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%; background: green"></div>
+                <div class="skill-progress-fill" style="width: 100%;"></div>
               </div>
 
             </li>
@@ -788,38 +637,101 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Restfull APIs</h5>
+                <h5 class="h5">RESTful API Design</h5>
                 <data value="100">100%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%; background: #1e7e09"></div>
+                <div class="skill-progress-fill" style="width: 100%;"></div>
               </div>
 
             </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Database Design</h5>
-                <data value="99">99%</data>
+                <h5 class="h5">Database Design (MySQL / MongoDB)</h5>
+                <data value="100">100%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 99%; background: #64be1a"></div>
+                <div class="skill-progress-fill" style="width: 100%;"></div>
               </div>
             </li>
 
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Frontend Development</h5>
-                <data value="90">90%</data>
+                <h5 class="h5">Frontend (Vue / Nuxt / Angular / Livewire)</h5>
+                <data value="85">85%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%; background: #9abe1a"></div>
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">AI / LLM Integration (OpenAI &amp; Claude)</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud &amp; DevOps (AWS, Linux, Redis)</h5>
+                <data value="60">60%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
             </li>
 
           </ul>
 
+        </section>
+
+        <!-- Strengths / Languages / Practices -->
+        <section class="mini-grid">
+
+          <div class="mini-box">
+            <div class="title-wrapper">
+              <div class="icon-box"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+              <h3 class="h3">Strengths</h3>
+            </div>
+            <ul class="mini-list">
+              <li>Delivers under pressure and ahead of deadlines</li>
+              <li>High sense of commitment and integrity</li>
+              <li>Strong written &amp; spoken English</li>
+              <li>Product‑first, pragmatic problem solver</li>
+            </ul>
+          </div>
+
+          <div class="mini-box">
+            <div class="title-wrapper">
+              <div class="icon-box"><ion-icon name="language-outline"></ion-icon></div>
+              <h3 class="h3">Languages</h3>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">English</span>
+              <span class="lang-level">Professional</span>
+            </div>
+          </div>
+
+        </section>
+
+        <section style="margin-bottom: 10px;">
+          <div class="title-wrapper" style="display:flex; align-items:center; gap:15px; margin-bottom: 18px;">
+            <div class="icon-box"><ion-icon name="construct-outline"></ion-icon></div>
+            <h3 class="h3">Practices</h3>
+          </div>
+          <div class="chip-wrap">
+            <span class="chip">Agile / Scrum</span>
+            <span class="chip">Code Reviews</span>
+            <span class="chip">DB Schema Design</span>
+            <span class="chip">CI/CD &amp; Deployment</span>
+            <span class="chip">API Design</span>
+          </div>
         </section>
 
       </article>
@@ -840,6 +752,12 @@
 
         <section class="projects">
 
+          <p style="color: var(--light-gray-70); font-size: var(--fs-6); margin-bottom: 25px;">
+            A selection of shipped work with live screenshots below — including my own <strong style="color: var(--white-2);">SmartLink</strong>
+            SaaS product and a few earlier freelance pieces — plus the complete index of all
+            <strong style="color: var(--white-2);">29 production platforms</strong> further down the page.
+          </p>
+
           <ul class="filter-list">
 
             <li class="filter-item">
@@ -847,15 +765,15 @@
             </li>
 
             <li class="filter-item">
+              <button data-filter-btn>Parking &amp; Mobility</button>
+            </li>
+
+            <li class="filter-item">
               <button data-filter-btn>E-Commerce</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Websites</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Corporate &amp; SaaS</button>
             </li>
 
           </ul>
@@ -879,15 +797,15 @@
               </li>
 
               <li class="select-item">
+                <button data-select-item>Parking &amp; Mobility</button>
+              </li>
+
+              <li class="select-item">
                 <button data-select-item>E-Commerce</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Websites</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Corporate &amp; SaaS</button>
               </li>
 
             </ul>
@@ -896,7 +814,25 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="websites">
+            <li class="project-item  active" data-filter-item data-category="parking & mobility">
+              <a href="./assets/images/5.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/5.png" alt="Mawqiftech" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mawqiftech</h3>
+
+                <p class="project-category">Parking &amp; Mobility — Laravel &amp; Lumen, bilingual EN/AR</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="parking & mobility">
               <a href="./assets/images/17.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
 
                 <figure class="project-img">
@@ -909,30 +845,12 @@
 
                 <h3 class="project-title">Makkah Visitors</h3>
 
-                <p class="project-category">Websites</p>
+                <p class="project-category">Parking &amp; Mobility — 4‑language routing (EN/AR/FR/UR)</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="./assets/images/5.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/5.png" alt="Key" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Mawqif</h3>
-
-                <p class="project-category">Application</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" data-filter-item data-category="parking & mobility">
               <a href="./assets/images/2.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
 
                 <figure class="project-img">
@@ -940,138 +858,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/2.png" alt="Key - Car Rental" loading="lazy">
+                  <img src="./assets/images/2.png" alt="Key.sa" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Key - Car Rental</h3>
+                <h3 class="project-title">Key.sa</h3>
 
-                <p class="project-category">Application</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="./assets/images/1.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/1.png" alt="Get-Atfal" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Get-Atfal</h3>
-
-                <p class="project-category">Application</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="websites">
-              <a href="./assets/images/6.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/6.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Linkat</h3>
-
-                <p class="project-category">Websites</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="websites">
-              <a href="./assets/images/8.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/8.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Furniture Plus</h3>
-
-                <p class="project-category">Websites</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="websites">
-              <a href="./assets/images/10.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/10.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Lumicell</h3>
-
-                <p class="project-category">Websites</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="websites">
-              <a href="./assets/images/13.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/13.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Zamil</h3>
-
-                <p class="project-category">Websites</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="websites">
-              <a href="./assets/images/15.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/15.png" alt="Nesmal" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Nesmal</h3>
-
-                <p class="project-category">Websites</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="websites">
-              <a href="./assets/images/18.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/18.png" alt="KSC" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">KSC</h3>
-
-                <p class="project-category">Websites</p>
+                <p class="project-category">Parking &amp; Mobility — Laravel car‑rental, bilingual EN/AR</p>
 
               </a>
             </li>
@@ -1084,12 +876,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/3.png" alt="Key" loading="lazy">
+                  <img src="./assets/images/3.png" alt="Getatfal" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Econocrafts</h3>
+                <h3 class="project-title">Getatfal</h3>
 
-                <p class="project-category">E-Commerce</p>
+                <p class="project-category">E‑Commerce — Laravel, bilingual EN/AR</p>
 
               </a>
             </li>
@@ -1102,84 +894,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/4.png" alt="Key" loading="lazy">
+                  <img src="./assets/images/4.png" alt="Caliwel" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Caliwel</h3>
+                <h3 class="project-title">Caliwel (CW)</h3>
 
-                <p class="project-category">E-Commerce</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="e-commerce">
-              <a href="./assets/images/7.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/7.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">People's Pantry</h3>
-
-                <p class="project-category">E-Commerce</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="e-commerce">
-              <a href="./assets/images/9.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/9.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Panel Built</h3>
-
-                <p class="project-category">E-Commerce</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="e-commerce">
-              <a href="./assets/images/11.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/11.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">The Box Store</h3>
-
-                <p class="project-category">E-Commerce</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="e-commerce">
-              <a href="./assets/images/12.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/12.png" alt="Linkat" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Kate Adam</h3>
-
-                <p class="project-category">E-Commerce</p>
+                <p class="project-category">E‑Commerce — Angular 10 + Laravel admin</p>
 
               </a>
             </li>
@@ -1197,12 +917,367 @@
 
                 <h3 class="project-title">Alammari</h3>
 
-                <p class="project-category">E-Commerce</p>
+                <p class="project-category">E‑Commerce — Online clothing store, CodeIgniter</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="corporate & saas">
+              <a href="./assets/images/6.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/6.png" alt="Linkat" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Linkat</h3>
+
+                <p class="project-category">Corporate &amp; SaaS — bit.ly‑style URL shortener, Laravel</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="corporate & saas">
+              <a href="./assets/images/smartlink.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/smartlink.png" alt="SmartLink" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SmartLink</h3>
+
+                <p class="project-category">Corporate &amp; SaaS — Self‑hosted URL shortener &amp; QR SaaS, Laravel + Sanctum</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="corporate & saas">
+              <a href="./assets/images/13.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/13.png" alt="Zamil" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Zamil</h3>
+
+                <p class="project-category">Corporate &amp; SaaS — Multilingual EN/AR, CodeIgniter</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="corporate & saas">
+              <a href="./assets/images/15.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/15.png" alt="Nesmal Group" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nesmal Group</h3>
+
+                <p class="project-category">Corporate &amp; SaaS — Group‑of‑companies site, CodeIgniter</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="corporate & saas">
+              <a href="./assets/images/18.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/18.png" alt="KSC" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">KSC</h3>
+
+                <p class="project-category">Corporate &amp; SaaS — Electric‑parts corporate site, CodeIgniter</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="e-commerce">
+              <a href="./assets/images/7.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/7.png" alt="People's Pantry" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">People's Pantry</h3>
+
+                <p class="project-category">E‑Commerce — Online local‑food &amp; grocery marketplace</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="e-commerce">
+              <a href="./assets/images/8.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/8.png" alt="Furniture Plus" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Furniture Plus</h3>
+
+                <p class="project-category">E‑Commerce — Furniture &amp; home decor store</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="corporate & saas">
+              <a href="./assets/images/9.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/9.png" alt="Panel Built" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Panel Built</h3>
+
+                <p class="project-category">Corporate &amp; SaaS — Modular‑buildings manufacturer site</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="corporate & saas">
+              <a href="./assets/images/10.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/10.png" alt="Lumicell" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Lumicell</h3>
+
+                <p class="project-category">Corporate &amp; SaaS — Healthcare / biotech corporate website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="e-commerce">
+              <a href="./assets/images/11.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/11.png" alt="The Box Store" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">The Box Store</h3>
+
+                <p class="project-category">E‑Commerce — Shipping, packing &amp; logistics services site</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="e-commerce">
+              <a href="./assets/images/12.png" onclick="lightBoxPreview();" data-lightbox="roadtrip">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/12.png" alt="Kate Adam" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kate Adam</h3>
+
+                <p class="project-category">E‑Commerce — Jewelry e‑commerce boutique</p>
 
               </a>
             </li>
 
           </ul>
+
+        </section>
+
+        <!-- Complete project index (all 29, matching CV) -->
+        <section class="fp-section">
+
+          <div class="fp-section-title">
+            <h3 class="h3">Complete Project Index</h3>
+            <p>29 production platforms delivered</p>
+          </div>
+
+          <div class="fp-cat">
+            <div class="fp-cat-title">Parking, Mobility &amp; Transport <span class="cnt">(5)</span></div>
+            <div class="fp-list">
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Mawqiftech</span><a class="fp-card-link" href="https://v2mqf-ap.mawqiftech.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Bilingual (EN/AR) car‑parking system in Laravel &amp; Lumen.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Makkah Visitors</span><a class="fp-card-link" href="https://park.naqaba.com.sa/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">4‑language (EN/AR/FR/UR) parking &amp; routing system.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">TruckQ</span><a class="fp-card-link" href="https://truckq.net/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Goods shipment &amp; transport management platform, Laravel.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Key</span><a class="fp-card-link" href="https://www.key.sa/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Car‑rental platform, Laravel, multilingual (EN/AR).</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Awfar</span><a class="fp-card-link" href="https://www.awfar.sa/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Car‑rental platform, Laravel, multilingual (EN/AR).</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fp-cat">
+            <div class="fp-cat-title">E‑Commerce Platforms <span class="cnt">(9)</span></div>
+            <div class="fp-list">
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Getatfal</span><a class="fp-card-link" href="http://portal.getatfal.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Bilingual (EN/AR) e‑commerce, Laravel.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Dino</span><a class="fp-card-link" href="https://dino.dotlogicstest.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Bilingual (EN/ES) e‑commerce, Laravel + Livewire.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">CG</span><a class="fp-card-link" href="http://cg.dotlogicstest.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">E‑commerce, Nuxt.js frontend + Laravel admin.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">HGP</span><a class="fp-card-link" href="https://hgpadmin321.dotlogicstest.com/admin/login" target="_blank" rel="noopener">admin ↗</a><span class="fp-card-sep">·</span><a class="fp-card-link" href="https://hgp321.dotlogicstest.com/" target="_blank" rel="noopener">site ↗</a></div>
+                <div class="fp-card-desc">E‑commerce, Laravel admin + Angular frontend.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Econocrafts (EC)</span><a class="fp-card-link" href="https://econocrafts.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">E‑commerce, Angular 10 + Laravel admin.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">AZ</span><a class="fp-card-link" href="https://azqa.dotlogicstest.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">E‑commerce, Angular 10 + Laravel admin.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Caliwel (CW)</span><a class="fp-card-link" href="https://www.caliwel.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">E‑commerce, Angular 10 + Laravel admin.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Alammari</span><a class="fp-card-link" href="https://www.alammari.sa/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Online clothing e‑commerce, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">PETstock</span><a class="fp-card-link" href="http://pet.darkwing.io/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Pet services platform, Laravel.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fp-cat">
+            <div class="fp-cat-title">Enterprise, Government &amp; CRM <span class="cnt">(4)</span></div>
+            <div class="fp-list">
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">PPIF</span><a class="fp-card-link" href="http://ppif.nexussecops.com" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Population Innovation Fund — Govt. of Punjab, Pakistan.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Smithsprings</span><a class="fp-card-link" href="http://crm.smithsprings.com" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Custom CRM platform built in Laravel.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Mercedes‑Benz KSA Leads</span><a class="fp-card-link" href="http://lm.mercedesbenzksa.com/mb/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Dealership leads‑management system, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Linkat</span><a class="fp-card-link" href="https://www.linkat.me/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">bit.ly‑style URL shortener built in Laravel.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fp-cat">
+            <div class="fp-cat-title">Multilingual CMS &amp; Corporate Sites <span class="cnt">(8)</span></div>
+            <div class="fp-list">
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Zamil</span><a class="fp-card-link" href="http://www.zamil.sa/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Multilingual (EN/AR) CMS, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">SGEM</span><a class="fp-card-link" href="http://www.sgem-est.com.sa/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Multilingual (EN/AR) CMS, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Nesma Electric</span><a class="fp-card-link" href="http://www.nesmaelectric.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Multilingual corporate website, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Nesma Embroidery</span><a class="fp-card-link" href="http://www.nesma-emb.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Multilingual corporate website, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">KSC</span><a class="fp-card-link" href="http://www.ksc.com.sa/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Electric‑parts corporate website, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Nesmal Group</span><a class="fp-card-link" href="http://nesmal.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Group‑of‑companies corporate site, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Green</span></div>
+                <div class="fp-card-desc">Multilingual corporate website, CodeIgniter.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">eMotions</span><a class="fp-card-link" href="http://emotions.ch/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Multilingual (EN/DE) media‑solutions site, Mura CMS.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fp-cat">
+            <div class="fp-cat-title">WordPress Sites <span class="cnt">(3)</span></div>
+            <div class="fp-list">
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">Certifiedyachts</span><a class="fp-card-link" href="http://certifiedyachts.com" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Online yacht sales website built in WordPress.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">1800yachtcharters</span><a class="fp-card-link" href="http://www.1800yachtcharters.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Yacht charter website built in WordPress.</div>
+              </div>
+              <div class="fp-card">
+                <div class="fp-card-row"><span class="fp-card-name">flatsat390</span><a class="fp-card-link" href="http://flatsat390.com/" target="_blank" rel="noopener">visit ↗</a></div>
+                <div class="fp-card-desc">Website built in WordPress.</div>
+              </div>
+            </div>
+          </div>
 
         </section>
 
@@ -1213,188 +1288,97 @@
 
 
       <!--
-        - #BLOG
+        - #OPEN SOURCE
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="open-source" data-page="open source">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Open Source</h2>
         </header>
 
-        <section class="blog-posts">
+        <section style="margin-bottom: 30px;">
+          <p style="color: var(--light-gray-70); font-size: var(--fs-6); line-height: 1.6;">
+            As an <strong style="color: var(--white-2);">open‑source author</strong>, I build and maintain PHP / Laravel
+            tooling alongside client work — from a full MVC framework to small, focused Composer packages. Explore
+            the code on
+            <a href="https://github.com/Ch-Kashif171" target="_blank" rel="noopener" style="color: var(--orange-yellow-crayola);">github.com/Ch-Kashif171</a>.
+          </p>
+        </section>
 
-          <ul class="blog-posts-list">
+        <section class="oss-grid">
 
-            <li class="blog-post-item">
-              <a href="#">
+          <div class="oss-card">
+            <div class="icon-box"><ion-icon name="layers-outline"></ion-icon></div>
+            <div>
+              <div class="oss-card-title">
+                <h4 class="h4">Larite</h4>
+                <span class="oss-card-role">Framework</span>
+              </div>
+              <p class="oss-card-desc">Lightweight, Laravel‑style PHP MVC framework built from scratch — routing, ORM‑style models, middleware and a Blade‑like templating layer.</p>
+              <a class="oss-card-link" href="https://larite.dev" target="_blank" rel="noopener">larite.dev <ion-icon name="open-outline"></ion-icon></a>
+            </div>
+          </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+          <div class="oss-card">
+            <div class="icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
+            <div>
+              <div class="oss-card-title">
+                <h4 class="h4">Knode</h4>
+                <span class="oss-card-role">Framework</span>
+              </div>
+              <p class="oss-card-desc">Custom Node.js MVC framework, Laravel‑inspired — bringing familiar structure and conventions to Node backends.</p>
+              <a class="oss-card-link" href="https://github.com/ch-kashif171/Knode" target="_blank" rel="noopener">View on GitHub <ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
 
-                <div class="blog-content">
+          <div class="oss-card">
+            <div class="icon-box"><ion-icon name="cash-outline"></ion-icon></div>
+            <div>
+              <div class="oss-card-title">
+                <h4 class="h4">Laravel Currency Converter</h4>
+                <span class="oss-card-role">Composer Package</span>
+              </div>
+              <p class="oss-card-desc">Composer package for live foreign‑exchange conversion inside Laravel applications.</p>
+              <a class="oss-card-link" href="https://github.com/ch-kashif171/currency-converter" target="_blank" rel="noopener">View on GitHub <ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+          <div class="oss-card">
+            <div class="icon-box"><ion-icon name="search-outline"></ion-icon></div>
+            <div>
+              <div class="oss-card-title">
+                <h4 class="h4">Laravel Full‑Text Search</h4>
+                <span class="oss-card-role">Composer Package</span>
+              </div>
+              <p class="oss-card-desc">Eloquent‑friendly full‑text search package for Laravel models.</p>
+              <a class="oss-card-link" href="https://github.com/ch-kashif171/full-text-search" target="_blank" rel="noopener">View on GitHub <ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
 
-                    <span class="dot"></span>
+          <div class="oss-card">
+            <div class="icon-box"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+            <div>
+              <div class="oss-card-title">
+                <h4 class="h4">Laravel Simple Captcha</h4>
+                <span class="oss-card-role">Composer Package</span>
+              </div>
+              <p class="oss-card-desc">Drop‑in captcha package compatible with Laravel 5 through 8.</p>
+              <a class="oss-card-link" href="https://github.com/ch-kashif171/captcha" target="_blank" rel="noopener">View on GitHub <ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
+          <div class="oss-card">
+            <div class="icon-box"><ion-icon name="link-outline"></ion-icon></div>
+            <div>
+              <div class="oss-card-title">
+                <h4 class="h4">SmartLink</h4>
+                <span class="oss-card-role">SaaS Product</span>
+              </div>
+              <p class="oss-card-desc">Self‑hosted URL shortener &amp; QR SaaS with Sanctum API tokens — sold on code marketplaces.</p>
+              <a class="oss-card-link" href="https://smartlink.larite.dev/" target="_blank" rel="noopener">smartlink <ion-icon name="open-outline"></ion-icon></a>
+            </div>
+          </div>
 
         </section>
 
@@ -1417,8 +1401,8 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+              src="https://www.google.com/maps?q=Wapda+Town,+Lahore,+Pakistan&output=embed"
+              width="400" height="300" loading="lazy" title="Wapda Town, Lahore, Pakistan"></iframe>
           </figure>
         </section>
 
@@ -1426,7 +1410,11 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formsubmit.co/amkashif171@gmail.com" method="POST" class="form" data-form>
+
+            <input type="hidden" name="_subject" value="New message from portfolio contact form">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1441,7 +1429,14 @@
               <span>Send Message</span>
             </button>
 
+            <p class="form-status" data-form-status></p>
+
           </form>
+
+          <p class="form-fallback">
+            Prefer email? Reach me directly at
+            <a href="mailto:amkashif171@gmail.com">amkashif171@gmail.com</a>
+          </p>
 
         </section>
 
@@ -1498,21 +1493,6 @@
       }
     }, 500);
 
-  }
-
-  function previewCv() {
-    document.getElementById("cv-view").style.display = 'block';
-    document.getElementById("close-cv").style.display = 'block';
-    document.getElementById("portfolio").style.display = 'none';
-    document.getElementById("resume").style.display = 'none';
-    document.getElementById("about").style.display = 'none';
-  }
-  function closeCv() {
-    document.getElementById("cv-view").style.display = 'none';
-    document.getElementById("close-cv").style.display = 'none';
-    document.getElementById("portfolio").style.display = 'block';
-    document.getElementById("resume").style.display = 'block';
-    document.getElementById("about").style.display = 'block';
   }
 
 </script>

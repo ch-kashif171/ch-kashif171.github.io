@@ -119,6 +119,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const formStatus = document.querySelector("[data-form-status]");
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -131,6 +132,43 @@ for (let i = 0; i < formInputs.length; i++) {
       formBtn.setAttribute("disabled", "");
     }
 
+  });
+}
+
+// send the message via FormSubmit's AJAX endpoint so a hiccup on their
+// end (or a slow connection) never dumps the visitor onto a bare error page
+if (form && formStatus) {
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    formBtn.setAttribute("disabled", "");
+    formStatus.textContent = "Sending…";
+    formStatus.className = "form-status is-pending";
+
+    const recipient = form.getAttribute("action").split("/").pop();
+
+    fetch(`https://formsubmit.co/ajax/${recipient}`, {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: new FormData(form)
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data || (data.success !== true && data.success !== "true")) {
+          throw new Error((data && data.message) || "Submission failed");
+        }
+        formStatus.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
+        formStatus.className = "form-status is-success";
+        form.reset();
+      })
+      .catch(() => {
+        formStatus.innerHTML =
+          'Sorry, the message service is temporarily unavailable. Please email me directly at <a href="mailto:amkashif171@gmail.com">amkashif171@gmail.com</a>.';
+        formStatus.className = "form-status is-error";
+      })
+      .finally(() => {
+        if (form.checkValidity()) formBtn.removeAttribute("disabled");
+      });
   });
 }
 
