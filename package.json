@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cv:pdf": "node scripts/generate-cv-pdf.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "24.6.1"
+  }
+}

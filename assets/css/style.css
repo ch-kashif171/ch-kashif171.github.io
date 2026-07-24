@@ -609,7 +609,9 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
+.date-time {
+  color: #e2d8d8;
+}
 
 /**
  * #testimonials-modal

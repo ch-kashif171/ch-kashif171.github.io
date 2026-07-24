@@ -90,8 +90,8 @@ html, body {
   justify-content: center;
 }
 .banner-photo img {
-  width: 23mm;
-  height: 23mm;
+  width: 25mm;
+  height: 25mm;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--teal);
